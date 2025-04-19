@@ -37,7 +37,7 @@ var plugin = function (args) {
 	if (Array.isArray(args?.inputFileObj?.mediaInfo?.track)) {
 		for (let i = 0; i < args.inputFileObj.mediaInfo.track.length; i += 1) {
 			const track = args.inputFileObj.mediaInfo.track[i];
-			if ( String(track.HDR_Format_Profile).includes("dvhe")  ) {
+			if ( String(track.HDR_Format_Profile).includes("dvhe") || String(track.HDR_Format_Profile).includes("dvav") || String(track.HDR_Format_Profile).includes("dav1") || String(track.HDR_Format_Profile).includes("dvh1") ) {
 				isDovi = true;
 			}
 		}
