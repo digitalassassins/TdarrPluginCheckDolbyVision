@@ -49,7 +49,6 @@ var details = function () { return ({
 exports.details = details;
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 var plugin = function (args) {
-    var _a, _b;
     var lib = require('../../../../../methods/lib')();
     // eslint-disable-next-line @typescript-eslint/no-unused-vars,no-param-reassign
     args.inputs = lib.loadDefaultValues(args.inputs, details);
